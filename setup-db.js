@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Database Setup Script for Persona.AI
+ * Database Setup Script for HAMII.AI
  *
  * This script helps set up the required Supabase database schema.
  * Run this after setting up your Supabase project.
@@ -14,7 +14,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-console.log('🚀 Persona.AI Database Setup');
+console.log('🚀 HAMII.AI Database Setup');
 console.log('============================\n');
 
 const migrationPath = path.join(__dirname, 'supabase', 'migrations', '001_create_practice_sessions.sql');
@@ -47,7 +47,7 @@ console.log('   - Proper indexes for performance');
 console.log('   - Row Level Security (RLS) policies');
 console.log('   - User data isolation\n');
 
-console.log('🎯 After running the SQL, your Persona.AI app will be able to save and load practice sessions!\n');
+console.log('🎯 After running the SQL, your HAMII.AI app will be able to save and load practice sessions!\n');
 
 console.log('💡 Alternative: You can also run the SQL directly from the file:');
 console.log(`   ${migrationPath}\n`);

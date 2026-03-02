@@ -32,7 +32,7 @@ const Navigation = () => {
                   </linearGradient>
                 </defs>
               </svg>
-              <span className="text-xl font-bold text-foreground">Persona.AI</span>
+              <span className="text-xl font-bold text-foreground">HAMII.AI</span>
             </a>
 
             {/* Desktop Navigation */}

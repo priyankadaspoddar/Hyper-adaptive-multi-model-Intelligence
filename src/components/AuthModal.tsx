@@ -118,7 +118,7 @@ export const AuthModal = ({ isOpen, onClose, onAuthSuccess }: AuthModalProps) =>
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle>Welcome to Persona.AI</DialogTitle>
+          <DialogTitle>Welcome to HAMII.AI</DialogTitle>
         </DialogHeader>
 
         <Tabs defaultValue="signin" className="w-full">

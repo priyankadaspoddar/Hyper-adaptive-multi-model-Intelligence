@@ -1,4 +1,4 @@
-# Persona.AI - Master Your Communication Skills
+# HAMII.AI - Master Your Communication Skills
 
 An advanced AI-powered communication coaching platform that provides real-time feedback on presentation skills using multi-modal analysis.
 

@@ -20,7 +20,7 @@ const Footer = () => {
                   </linearGradient>
                 </defs>
               </svg>
-              <span className="font-bold text-foreground">Persona.AI</span>
+              <span className="font-bold text-foreground">HAMII.AI</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Transform your communication skills with AI-powered coaching and real-time feedback.
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>&copy; 2025 Persona.AI.</p>
+          <p>&copy; 2025 HAMII.AI.</p>
         </div>
       </div>
     </footer>
