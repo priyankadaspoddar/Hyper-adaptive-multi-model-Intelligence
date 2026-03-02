@@ -168,6 +168,41 @@ export function ResumeInterview(): JSX.Element {
           </div>
         </section>
 
+        {/* Algorithm Details */}
+        <section className="py-8 px-4 bg-secondary/5">
+          <div className="container mx-auto max-w-3xl">
+            <Card className="p-6 border-border/50">
+              <h2 className="text-2xl font-bold text-foreground mb-4">How the Algorithm Works</h2>
+              <p className="text-muted-foreground mb-4">
+                The interview workflow is powered by a series of lightweight analysis steps executed entirely in the browser:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-sm text-foreground">
+                <li>
+                  <strong>Resume Parsing</strong> – PDF files are scanned for text (non‑image PDFs work best). The extracted text can also be pasted manually.
+                </li>
+                <li>
+                  <strong>Skill Detection</strong> – The text is normalized and searched for known programming languages, frameworks, and tools. A simple fallback regex captures other tokens when no matches are found. Experience level is heuristically inferred from keywords (e.g. "intern", "5 years").
+                </li>
+                <li>
+                  <strong>Question Generation</strong> – Detected skills seed a pool of template questions grouped by category (technical, behavioral, HR). Up to three tech questions are selected along with a couple of behavioral prompts and an HR question.
+                </li>
+                <li>
+                  <strong>Recording &amp; Analysis</strong> – Your spoken answer is transcribed using the Web Speech API. Answers are scored on:
+                  <ul className="list-disc list-inside ml-6">
+                    <li>Content (keyword matching against expected topics)</li>
+                    <li>Clarity (articulation/clarity metrics from the speech analyzer)</li>
+                    <li>Confidence (optional video frame analysis for facial cues)</li>
+                  </ul>
+                  These metrics are combined into an overall score displayed after each question.
+                </li>
+              </ul>
+              <p className="text-xs text-muted-foreground mt-4">
+                All computation happens locally; no audio or resume data leaves your browser unless you explicitly share it.
+              </p>
+            </Card>
+          </div>
+        </section>
+
         {/* Main Content */}
         <section className="py-12 px-4">
           <div className="container mx-auto max-w-4xl">
